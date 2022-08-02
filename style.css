@@ -154,7 +154,7 @@ main {
   top: 16.5rem;
   transform: translateX(-50%);
   height: 10rem;
-  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.4);
 }
 
 .player--winner {
@@ -164,4 +164,67 @@ main {
 .player--winner .name {
   font-weight: 700;
   color: #c7365f;
+}
+
+.hidden {
+  display: none;
+}
+
+/* for mobile view */
+
+@media (max-width: 750px) {
+  main {
+    width: 50rem;
+  }
+
+  .name {
+    position: relative;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    word-spacing: 0.6px;
+    font-weight: 200;
+  }
+
+  .score {
+    font-size: 5rem;
+    font-weight: 200;
+  }
+
+  .btn {
+    position: absolute;
+    left: 55%;
+    font-size: 1.3rem;
+    font-weight: 300;
+    padding: 0.4rem 1.7rem;
+    border-radius: 50rem;
+    box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+  }
+
+  .current {
+    width: 100%;
+    padding: 1.8rem;
+    text-align: center;
+  }
+
+  .current-label {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    color: #ddd;
+    text-align: center;
+  }
+
+  .current-score {
+    font-size: 2.5rem;
+  }
+
+  .dice {
+    position: absolute;
+    left: 55%;
+    top: 16.5rem;
+    transform: translateX(-50%);
+    height: 8rem;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.4);
+  }
 }
